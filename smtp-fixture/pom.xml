@@ -5,7 +5,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>smtp-fixture</name>
   <description>	</description>
-  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies> 
     <dependency> 
  <groupId>dumbster</groupId> 
@@ -27,5 +38,12 @@
   <artifactId>mail</artifactId> 
   <version>1.4.1</version> 
     </dependency>
+  <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+    
   </dependencies>
 </project>
