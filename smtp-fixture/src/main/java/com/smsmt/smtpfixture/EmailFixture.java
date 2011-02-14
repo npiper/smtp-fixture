@@ -12,8 +12,9 @@ import javax.mail.internet.MimeMessage;
 
 import com.dumbster.smtp.SimpleSmtpServer;
 import com.dumbster.smtp.SmtpMessage;
+import fit.ColumnFixture;
 
-public class EmailFixture {
+public class EmailFixture extends ColumnFixture {
 
 	public EmailFixture() {
 		emailServer = SimpleSmtpServer.start();
